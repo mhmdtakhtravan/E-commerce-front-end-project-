@@ -1,0 +1,38 @@
+@import url(_top-nav.css);
+@import url(_top-slider.css);
+@import url(_shipping.css);
+@font-face {
+  font-family: Vazirmatn-Medium;
+  src: url(../fonts/Vazirmatn-Medium.woff2) format("woff2"),
+    url(../fonts/Vazirmatn-Medium.eot) format(eot),
+    url(../fonts/Vazirmatn-Medium.woff) format(woff);
+  font-style: normal;
+}
+* {
+  font-family: Vazirmatn-Medium;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: Vazirmatn-Medium;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+figure {
+  position: relative;
+}
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+  margin: 0;
+}

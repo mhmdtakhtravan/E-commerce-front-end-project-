@@ -1,0 +1,84 @@
+.bg-top-nav {
+  background-color: #232f3e;
+  color: #fff;
+}
+.custom-top-nav,
+.bg-top-nav p {
+  font-size: 14px;
+}
+.custom-top-nav a {
+  padding: 5px;
+  border-left: 1px solid #4a4a4a;
+}
+.custom-btn-font-size {
+  font-size: 14px;
+}
+.shopping-cart {
+  background-color: transparent !important;
+}
+.shopping-cart span {
+  font-size: 16px;
+  margin-left: 5px;
+}
+.shopping-cart i {
+  vertical-align: -3px;
+}
+.custom-dropdown-toggle::after {
+  vertical-align: 0px;
+}
+.basket {
+  width: 300px !important;
+}
+.basket a img {
+  width: 64px;
+  height: 64px;
+}
+.custom-navbar-nav {
+  font-size: 14px;
+}
+.custom-navbar-nav .nav-item {
+  position: unset;
+}
+.custom-dropdown-menu {
+  position: absolute;
+  right: 0;
+  border-radius: 0;
+  top: 54px;
+}
+.khanegi-tasvir {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.khanegi-dropdown ul li a i {
+  vertical-align: middle;
+}
+.khanegi-dropdown ul li a {
+  color: #000 !important;
+  font-size: 16px;
+  transition: 0.5s ease;
+}
+.khanegi-dropdown ul.nav li.nav-item {
+  transition: 0.5s ease;
+}
+.khanegi-dropdown ul.nav li.nav-item a.nav-link {
+  transition: 0.5s ease;
+}
+.khanegi-dropdown ul.nav li.nav-item:hover {
+  margin-right: 5px;
+  /* text-decoration-color: rgb(3, 192, 250)!important; */
+}
+.khanegi-dropdown ul.nav li.nav-item:hover a.nav-link {
+  color: rgb(3, 192, 250) !important ;
+}
+.custom-navbar-toggler {
+  border: none;
+}
+.custom-navbar-toggler:focus {
+  outline: none;
+}
+.search-input::-webkit-input-placeholder {
+  font-size: 16px;
+}

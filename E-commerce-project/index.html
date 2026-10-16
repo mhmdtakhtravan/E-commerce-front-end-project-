@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap-css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css"
+      integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- my-css-style -->
+    <link rel="stylesheet" href="assets/css/index-style.css" />
+
+    <title>قالب سایت فروشگاهی</title>
+  </head>
+  <body dir="rtl" class="bg-light">
+    <!-- top nav start -->
+    <div class="container-fluid bg-top-nav">
+      <div class="row">
+        <!-- بخش شعار و منوی بالایی -->
+        <div class="container">
+          <div class="row d-flex justify-content-between align-items-center">
+            <div class="col-12 col-sm-12 col-md-6 d-none d-lg-inline">
+              <p class="text-white">ارسال رایگان - ضمانت بازگشت وجه سی روزه</p>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6">
+              <nav class="nav custom-top-nav d-flex justify-content-center">
+                <a class="nav-link text-white" href="#">آدرس فروشگاه</a>
+                <a class="nav-link text-white" href="#">پیگیری سفارشات</a>
+                <a class="nav-link text-white" href="#">تلفن09120000000</a>
+                <a class="nav-link text-white d-none d-xl-block" href="#"
+                  >ضمانت کیفیت محصولات</a
+                >
+              </nav>
+            </div>
+          </div>
+        </div>
+        <!-- بخش سرچ و سبد خرید -->
+        <div class="container">
+          <div class="row d-flex justify-content-around align-items-center">
+            <div class="col-12 col-sm-12 col-md-9">
+              <div class="input-group my-5">
+                <div class="input-group-prepend">
+                  <button
+                    class="btn btn-secondary dropdown-toggle custom-btn-font-size"
+                    type="button"
+                    data-toggle="dropdown"
+                  >
+                    دسته بندی ها
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">موبایل</a>
+                    <a class="dropdown-item" href="#">قطعات کامپیوتری</a>
+                    <a class="dropdown-item" href="#">پوشاک</a>
+                    <a class="dropdown-item" href="#">لوازم خانگی</a>
+                  </div>
+                </div>
+                <input
+                  placeholder="جست و جو میان بیش از 250000 کالا..."
+                  type="text"
+                  class="form-control search-input"
+                  aria-label="Text input with dropdown button"
+                />
+                <div class="input-group-append">
+                  <button
+                    class="btn btn-success custom-btn-font-size"
+                    type="button"
+                  >
+                    جست و جو
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-sm-12 col-md-3 d-flex justify-content-end align-items-center"
+            >
+              <div class="dropdown show my-5">
+                <a
+                  class="btn btn-link text-decoration-none text-white dropdown-toggle custom-dropdown-toggle border-0 shopping-cart custom-btn-font-siz"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                >
+                  <span>سبد خرید</span>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+
+                <div class="dropdown-menu basket">
+                  <a
+                    class="dropdown-item p-1 d-flex justify-content-around"
+                    href="#"
+                  >
+                    <img
+                      class="img-thumbnail"
+                      src="assets/image/sittingchair.png"
+                      alt=""
+                    />
+                    <ul>
+                      <li>صندلی سلطنتی قهوه ای</li>
+                      <li>مدل کد 1567</li>
+                      <li>12000000 ریال</li>
+                    </ul>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </a>
+                  <a
+                    class="dropdown-item p-1 d-flex justify-content-around"
+                    href="#"
+                  >
+                    <img
+                      class="img-thumbnail"
+                      src="assets/image/smartphone.png"
+                      alt=""
+                    />
+
+                    <ul>
+                      <li>گوشی موبایل</li>
+                      <li>galexy s20 ultra</li>
+                      <li>200000000 ریال</li>
+                    </ul>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- بخش مگا منو -->
+        <nav class="w-100 position-relative">
+          <div class="container">
+            <div class="row">
+              <nav
+                class="navbar navbar-expand-md navbar-dark custom-navbar w-100"
+              >
+                <!-- <a class="navbar-brand" href="#">محصولات</a> -->
+                <button
+                  class="navbar-toggler custom-navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav custom-navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link text-white" href="#">خانه</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle text-white"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-toggle="dropdown"
+                      >
+                        لوازم خانگی
+                      </a>
+                      <div
+                        class="dropdown-menu custom-dropdown-menu w-100 khanegi-dropdown border-0 shadow"
+                        aria-labelledby="navbarDropdown"
+                      >
+                        <img
+                          class="khanegi-tasvir d-none d-md-block"
+                          src="assets/image/bomboli.png"
+                          alt=""
+                        />
+                        <div class="container">
+                          <div class="row w-100">
+                            <div class="col-sm-12 col-md-5">
+                              <ul class="nav flex-column pl-3">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#"
+                                    ><i class="fas fa-angle-left"> </i> ماشین
+                                    لباس شویی
+                                  </a>
+                                </li>
+
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">
+                                    <i class="fas fa-angle-left"></i> یخچال و
+                                    فریزر
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">
+                                    <i class="fas fa-angle-left"></i> اجاق گاز
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#"
+                                    ><i class="fas fa-angle-left"></i> لوازم
+                                    صوتی و تصویری
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">
+                                    <i class="fas fa-angle-left"></i> ماشین ظرف
+                                    شویی
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#"
+                                    ><i class="fas fa-angle-left"></i> مبلمان و
+                                    صندلی
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#"
+                                    ><i class="fas fa-angle-left"></i> جاروبرقی
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#"
+                                    ><i class="fas fa-angle-left"></i> ظروف
+                                    آشپزخانه</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-sm-12 col-md-5">
+                              <ul class="nav flex-column pl-3">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#"
+                                    ><i class="fas fa-angle-left"> </i> ماشین
+                                    لباس شویی
+                                  </a>
+                                </li>
+
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">
+                                    <i class="fas fa-angle-left"></i> یخچال و
+                                    فریزر
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">
+                                    <i class="fas fa-angle-left"></i> اجاق گاز
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#"
+                                    ><i class="fas fa-angle-left"></i> لوازم
+                                    صوتی و تصویری
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">
+                                    <i class="fas fa-angle-left"></i> ماشین ظرف
+                                    شویی
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#"
+                                    ><i class="fas fa-angle-left"></i> مبلمان و
+                                    صندلی
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#"
+                                    ><i class="fas fa-angle-left"></i> جاروبرقی
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#"
+                                    ><i class="fas fa-angle-left"></i> ظروف
+                                    آشپزخانه</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle text-white"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-toggle="dropdown"
+                      >
+                        سوپرمارکت
+                      </a>
+                      <div
+                        class="dropdown-menu custom-dropdown-menu w-100"
+                        aria-labelledby="navbarDropdown"
+                      >
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle text-white"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-toggle="dropdown"
+                      >
+                        لوازم دیجیتال
+                      </a>
+                      <div
+                        class="dropdown-menu custom-dropdown-menu w-100"
+                        aria-labelledby="navbarDropdown"
+                      >
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle text-white"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        لوازم خودرو
+                      </a>
+                      <div
+                        class="dropdown-menu custom-dropdown-menu w-100"
+                        aria-labelledby="navbarDropdown"
+                      >
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#">درباره ما</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#">تماس با ما</a>
+                    </li>
+                  </ul>
+                  <a class="text-warning text-decoration-none" href=""
+                    >تخفیف ویژه نوروزی</a
+                  >
+                </div>
+              </nav>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- top nav end -->
+    <!-- slider start -->
+    <div class="container-fluid bg-white pb-5">
+      <div class="row">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-7">
+              <div
+                id="carouselExampleIndicators"
+                class="carousel slide carousel-fade"
+                data-ride="carousel"
+              >
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="1"
+                  ></li>
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="2"
+                  ></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      class="d-block w-100 slider-top-img"
+                      src="assets/image/slider-1.jpg"
+                      alt="First slide"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h6>پوشاک زنانه</h6>
+                      <p class="bg-warning p-1 rounded">
+                        تابستان امسال همراه با جدیدترین پوشاک زنانه
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      class="d-block w-100 slider-top-img"
+                      src="assets/image/slider-2.jpg"
+                      alt="Second slide"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h6>جدیدترین لوازم تحریر</h6>
+                      <p class="bg-primary p-1 rounded">
+                        بهترین لوازم تحریر برای دانش آموزان و دانشجویان
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      class="d-block w-100 slider-top-img"
+                      src="assets/image/slider-3.jpeg"
+                      alt="Third slide"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h6 class="text-dark">جدیدترین گوشی های موبایل</h6>
+                      <p class="bg-success p-1 rounded">
+                        با خرید موبایل در قرعه کشی هفتگی ما شرکت کنید
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  class="carousel-control-prev"
+                  href="#carouselExampleIndicators"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#carouselExampleIndicators"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 mt-csm-3">
+              <div class="side-image-cover d-flex justify-content-center">
+                <a href="#">
+                  <img
+                    class="slider-side-image"
+                    src="assets/image/daste.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-6 col-sm-6 col-md-2 mt-csm-3 d-flex flex-column justify-content-between overflow-hidden"
+            >
+              <a href="#">
+                <img
+                  class="slider-side-image-v2"
+                  src="assets/image/takhfif1.jpg"
+                  alt=""
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="slider-side-image-v2"
+                  src="assets/image/takhfif2.jpg"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <!-- slider end -->
+        <!-- shipping start-->
+        <div class="container">
+          <div class="row d-flex justify-content-around">
+            <div
+              class="col-sm-12 col-md-5 col-lg-2 mt-5 d-flex flex-row align-items-center shipping-wrapper"
+            >
+              <i class="fa-solid fa-truck-fast shipping-icon"></i>
+              <p>ارسال رایگان به تمام نقاط کشور</p>
+            </div>
+            <div
+              class="col-sm-12 col-md-5 col-lg-2 mt-5 d-flex flex-row align-items-center shipping-wrapper"
+            >
+              <i class="fa-regular fa-credit-card shipping-icon"></i>
+              <p>امکان پرداخت آنلاین</p>
+            </div>
+            <div
+              class="col-sm-12 col-md-5 col-lg-2 mt-5 d-flex flex-row align-items-center shipping-wrapper"
+            >
+              <i class="fa-solid fa-hand-holding-dollar shipping-icon"></i>
+              <p>امکان پرداخت در محل</p>
+            </div>
+            <div
+              class="col-sm-12 col-md-5 col-lg-2 mt-5 d-flex flex-row align-items-center shipping-wrapper"
+            >
+              <i class="fa-regular fa-comments shipping-icon"></i>
+              <p>نظرات بیش از 1000 کاربر</p>
+            </div>
+            <div
+              class="col-sm-12 col-md-5 col-lg-2 mt-5 d-flex flex-row align-items-center shipping-wrapper"
+            >
+              <i class="fa-regular fa-address-card shipping-icon"></i>
+              <p>ضمانت کیفیت محصولات</p>
+            </div>
+            <!-- <div class="col-sm-12 col-md-2 mt-5 d-flex flex-row shiping-wraper">
+          <i class="fa-solid fa-truck-fast shiping-icon"></i>
+          <p>ارسال رایگان به تمام نقاط کشور</p>
+        </div> -->
+          </div>
+        </div>
+        <!-- شروع بخش تبلیغات -->
+        <div class="container">
+          <div class="row my-5 d-flex justify-content-around">
+            <div class="col-sm-12 col-md-4 mb-2">
+              <img
+                class="img-fluid w-100"
+                src="assets/image/categori1.png"
+                alt=""
+              />
+            </div>
+            <div class="col-sm-12 col-md-4 mb-2">
+              <img
+                class="img-fluid w-100"
+                src="assets/image/categori1.png"
+                alt=""
+              />
+            </div>
+            <div class="col-sm-12 col-md-4 mb-2">
+              <img
+                class="img-fluid w-100"
+                src="assets/image/categori3.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 mb-2">
+              <img
+                class="img-fluid w-100"
+                src="assets/image/categori2.png"
+                alt=""
+              />
+            </div>
+              <div class="col-12 col-sm-12 col-md-6 mb-2">
+              <img
+                class="img-fluid w-100"
+                src="assets/image/categori2.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <!-- پایان بخش تبلیغات -->
+      </div>
+    </div>
+    <!-- shiping end -->
+    <!-- شروع بخش دسته بندی ها -->
+    <section class="container mt-5">
+      <div class="row">
+        <div class="col-sm-12 col-md-3 col-lg-2">
+          <p>موبایل و تبلت</p>
+          <p>567 محصول</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- پایان بخش دسته بندی ها -->
+    <!-- Bootstrap-jQuery and JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.bundle.min.js"
+      integrity="sha384-40ix5a3dj6/qaC7tfz0Yr+p9fqWLzzAXiwxVLt9dw7UjQzGYw6rWRhFAnRapuQyK"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

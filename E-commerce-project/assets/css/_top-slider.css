@@ -1,0 +1,27 @@
+.slider-top-img {
+  height: 300px;
+}
+.side-image-cover {
+  max-height: 300px;
+  overflow: hidden;
+}
+.slider-side-image {
+  height: 300px;
+}
+.slider-side-image,
+.slider-side-image-v2 {
+  transition: 0.5s ease;
+}
+.slider-side-image:hover,
+.slider-side-image-v2:hover {
+  transform: scale(1.2);
+}
+.slider-side-image-v2 {
+  width: 100%;
+  max-height: 125px;
+}
+@media (max-width: 767px) {
+  .mt-csm-3 {
+    margin-top: 1rem !important;
+  }
+}

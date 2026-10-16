@@ -1,0 +1,23 @@
+.shipping-icon {
+  font-size: 35px;
+  margin-left: 5px;
+  color: brown;
+}
+.shipping-wrapper {
+  /* background-image: linear-gradient(to right, brown, #efefef); */
+  padding: 10px;
+  border: 1px solid brown;
+  border-radius: 50px;
+}
+.shipping-wrapper,
+.shipping-icon {
+  transition: 0.5s ease;
+}
+.shipping-wrapper:hover {
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+}
+.shipping-wrapper:hover .shipping-icon {
+  color: white;
+}
